@@ -5,7 +5,7 @@
                && !empty($_POST['password'])) {
 				
                if ($_POST['id'] == 'admin' && 
-                  $_POST['password'] == 'admin@tw') {
+                  $_POST['password'] == 'admin') {
                    session_start();
                   $_SESSION['valid'] = true;
                   
@@ -15,7 +15,7 @@
                }
                 
                 else if ($_POST['id'] == 'user' && 
-                  $_POST['password'] == 'user@tw') {
+                  $_POST['password'] == 'user') {
                    session_start();
                   $_SESSION['valid'] = true;
                   
